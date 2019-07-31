@@ -1,10 +1,27 @@
-form{
-    float: right;
-    padding: 5px;
+body{
+    background-color: rgb(241, 226, 255);
+}
+.submit{
+    background-color: rgb(10, 165, 80);
+    margin-top: 5px;
+    border: 10px;
+}
 
+input[type="text"]{
+    margin-top: 10px;
+    padding:10px;
+    border-style: solid;
+    color: red;
+}
+form{
+
+    float: right;
+    padding: 10px;
 }
 
 label{
     display:block;
     margin-bottom: 12px;
+    padding: 10px;
 }
+
