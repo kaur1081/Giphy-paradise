@@ -1,33 +1,34 @@
 $(document).ready(function () {
-    populateButtons(searchChanell, 'searchButton', "#buttonArea");
+    populateButtons(searchChannel, 'searchButton', "#buttonArea");
 
 });
-var searchChanell = ['PBS kids', 'Disney', 'cartoon-Network', 'History'];
+var searchChannel = ['PBS kids', 'Disney', 'cartoon-Network', 'nick jr.'];
 
-function populateButtons(searchChanell, classToAdd, areaToAddTo) {
+function populateButtons(searchChannel, classToAdd, areaToAddTo) {
     $(areaToAddTo).empty();
-    for (var i = 0; i < searchChanell.length; i++) {
+    for (var i = 0; i < searchChannel.length; i++) {
         var a = $('<button>');
         a.addClass(classToAdd);
-        a.attr('data-type', searchChanell[i]);
-        a.text(searchChanell[i]);
+        a.attr('data-type', searchChannel[i]);
+        a.text(searchChannel[i]);
         $(areaToAddTo).append(a);
     }
 
 }
 
 
-$(document).on('click', '.searchButton', function () {
+$(document).on('click', '.searchButton', function() {
     var type = $(this).data('type');
 
-    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=5kdXTs8Kg9VipXKtT5cp770orDHmJ0we&limit=12";
+    var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + type + "&api_key=5kdXTs8Kg9VipXKtT5cp770orDHmJ0we&limit=10";
     $.ajax({
             url: queryURL,
             method: "GET"
         })
-        .done(function (response) {
+        .done(function(response) {
+            $('#searches').empty();
             for (var i = 0; i < response.data.length; i++) {
-                var searchDiv = $('<div class="search-item">');
+                var searchDiv = $('<div class="search-item col-md-6 giphyImage">');
                 var rating = response.data[i].rating;
                 var p = $('<p>').text('Rating:' + rating);
                 var animated = response.data[i].images.fixed_height.url;
@@ -54,9 +55,13 @@ $(document).on('click', '.searchImage', function () {
         $(this).attr('data-state', 'still');
     }
 })
-$('#addSearch').on('click', function () {
+$('.submit').on('click', function () {
+    event.preventDefault();
+    console.log('here');
     var newSearch = $('input').eq(0).val();
-    searchChanell.push(newSearch);
-    populateButtons(searchChanell, 'searchButton', "#buttonArea");
-    return false;
+    searchChannel.push(newSearch);
+    populateButtons(searchChannel, 'searchButton', "#buttonArea");
+
+    // return false;
+    
 })

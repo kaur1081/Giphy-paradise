@@ -4,14 +4,30 @@ body{
 .submit{
     background-color: rgb(10, 165, 80);
     margin-top: 5px;
-    border: 10px;
+    color: black;
+    border-style: solid;
+ 
 }
-
+.centered {
+    display: flex;
+    justify-content: center;
+}
+.giphyImage{
+    
+    height: 200px;
+    max-width: 200px ;
+    margin:5px;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 input[type="text"]{
-    margin-top: 10px;
+    /* margin-top: 10px; */
     padding:10px;
     border-style: solid;
     color: red;
+    float: left;
 }
 form{
 
@@ -21,7 +37,8 @@ form{
 
 label{
     display:block;
-    margin-bottom: 12px;
+    margin: 0px;
     padding: 10px;
+    font-family: cursive;
 }
 
