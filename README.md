@@ -5,7 +5,8 @@
 
 ## Overview
  
-In this project, I made  an array of giphys,  I called Api and  append my searches for different channels.
+In this project, we had to made an array of Channel giphys,  I called Api to show my result searches for different channels.
+We just need to submit channel of our choice and see giphys related to it
 It was a challenging project but was fun learning about Api calls.
 
 ## Screenshots
@@ -18,3 +19,4 @@ It was a challenging project but was fun learning about Api calls.
 - JavaScript
 - Bootstrap
 - Ajax
+- GoogleFont
