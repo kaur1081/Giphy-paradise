@@ -44,6 +44,10 @@ label{
     display:block;
     margin: 0px;
     padding: 10px;
-    font-family: cursive;
+    font-family: 'Philosopher', sans-serif;
+}
+.searchButton{
+    margin-top: 10px;
+    margin: 2px;
 }
 
