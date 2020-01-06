@@ -4,17 +4,16 @@ body{
     background-size: cover;
   
 }
-
 .submit{
     background-color: rgb(10, 165, 80);
     margin-top: 5px;
     color: black;
     border-style: solid;
- 
+    align-self: center;
 }
 .centered {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 .giphyImage{
     
@@ -34,11 +33,13 @@ margin-top: 15px;
 }
 
 input[type="text"]{
+    width:300px;
     /* margin-top: 10px; */
     padding:10px;
     border-style: solid;
     color:rgb(59, 7, 59);
     float: left;
+
 }
 form{
     float: right;
@@ -50,8 +51,11 @@ label{
     padding: 10px;
     font-family: 'Philosopher', sans-serif;
 }
+#buttonArea{
+    margin-top: 100px;
+}
 .searchButton{
     margin-top: 30px;
-   margin: 3px;
+    margin: 3px;
 }
 
