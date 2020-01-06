@@ -9,7 +9,8 @@ body{
     margin-top: 5px;
     color: black;
     border-style: solid;
-    align-self: center;
+    /* align-self: center; */
+    
 }
 .centered {
     display: flex;
@@ -20,6 +21,7 @@ body{
     height: 300px;
     max-width: 200px ;
     margin: 15px;
+    image-resolution: auto;
 }
 img {
      max-width: 100%; 
@@ -29,7 +31,9 @@ img {
 }
 .channelArea{
 font-family: 'Philosopher', sans-serif;
+font-size: 32px;
 margin-top: 15px;
+/* margin-left: 30px; */
 }
 
 input[type="text"]{
@@ -39,7 +43,6 @@ input[type="text"]{
     border-style: solid;
     color:rgb(59, 7, 59);
     float: left;
-
 }
 form{
     float: right;

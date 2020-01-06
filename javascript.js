@@ -29,7 +29,7 @@ $(document).on('click', '.searchButton', function() {
             $('#searches').empty();
             for (var i = 0; i < response.data.length; i++) {
                 var searchDiv = $('<div class="search-item col-md-6 giphyImage">');
-                var rating = response.data[i].rating;
+                var rating = response.data[i].rating.toUpperCase();
                 var p = $('<p>').text('Rating:' + rating);
                 var animated = response.data[i].images.fixed_height.url;
                 var still = response.data[i].images.fixed_height_still.url;
