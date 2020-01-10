@@ -21,4 +21,4 @@ It was a challenging project but was fun learning about Api calls.
 - Ajax
 - GoogleFont
 
-Autor: Karishma Hattar
+Aurthor: Karishma Hattar
