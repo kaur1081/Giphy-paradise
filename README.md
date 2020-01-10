@@ -20,3 +20,5 @@ It was a challenging project but was fun learning about Api calls.
 - Bootstrap
 - Ajax
 - GoogleFont
+
+Autor: Karishma Hattar
