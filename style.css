@@ -19,8 +19,8 @@ body{
 .giphyImage{
     
     height: 300px;
-    max-width: 200px ;
-    margin: 15px;
+    max-width: 250px ;
+    /* margin: 20px; */
     image-resolution: auto;
 }
 img {
@@ -32,7 +32,7 @@ img {
 .channelArea{
 font-family: 'Philosopher', sans-serif;
 font-size: 32px;
-margin-top: 15px;
+margin-top: 10px;
 /* margin-left: 30px; */
 }
 
@@ -55,7 +55,7 @@ label{
     font-family: 'Philosopher', sans-serif;
 }
 #buttonArea{
-    margin-top: 100px;
+    margin-top: 150px;
 }
 .searchButton{
     margin-top: 30px;

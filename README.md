@@ -10,7 +10,7 @@ We just need to submit channel of our choice and see giphys related to it
 It was a challenging project but was fun learning about Api calls.
 
 ## Screenshots
-![ Giphy-paradise! ](https://github.com/kaur1081/Giphy-paradise/blob/master/giphy.PNG)
+![ Giphy-paradise! ](https://github.com/kaur1081/Giphy-paradise/blob/master/giphy1.PNG)
 
 ## Technologies used
 
