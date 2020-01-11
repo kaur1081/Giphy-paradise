@@ -1,7 +1,8 @@
 # Giphy-paradise
 
 
-!(https://kaur1081.github.io/Giphy-paradise/)
+Deploy Link for Giphy!
+(https://kaur1081.github.io/Giphy-paradise/)
 
 ## Overview
  
